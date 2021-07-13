@@ -1,0 +1,127 @@
+{
+  "_args": [
+    [
+      "mhui-rn@1.5.3",
+      "F:\\work\\miot-plugin-sdk"
+    ]
+  ],
+  "_from": "mhui-rn@1.5.3",
+  "_id": "mhui-rn@1.5.3",
+  "_inBundle": false,
+  "_integrity": "sha512-wcWvstgKjDUWXeaw0qYOTyJiFPerPSno48opzFfAbW45GQ7p3xD2DhnfkrtEbt05qYipiOG7/R6WuMNAodfngw==",
+  "_location": "/mhui-rn",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "mhui-rn@1.5.3",
+    "name": "mhui-rn",
+    "escapedName": "mhui-rn",
+    "rawSpec": "1.5.3",
+    "saveSpec": null,
+    "fetchSpec": "1.5.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mhui-rn/-/mhui-rn-1.5.3.tgz",
+  "_spec": "1.5.3",
+  "_where": "F:\\work\\miot-plugin-sdk",
+  "author": {
+    "name": "MIoT"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@react-native-community/art": "^1.2.0",
+    "memoize-one": "^5.1.1",
+    "react-native-indicators": "^0.13.0",
+    "react-native-iphone-x-helper": "^1.2.0",
+    "react-native-linear-gradient": "^2.5.4",
+    "react-native-progress": "^3.5.0",
+    "react-native-root-siblings": "^4.0.6",
+    "react-native-shadow": "^1.2.2",
+    "react-native-slider": "^0.11.0",
+    "react-native-svg": "^9.5.3",
+    "react-native-swiper": "^1.6.0-nightly.5",
+    "react-native-ui-kitten": "^3.1.2",
+    "react-navigation": "2.16.0"
+  },
+  "description": "米家扩展程序中使用的 React Native 组件库",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-typescript": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/react": "^16.9.23",
+    "@types/react-native": "^0.61.23",
+    "@types/react-native-indicators": "^0.16.0",
+    "@types/react-navigation": "^3.4.0",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.1.0",
+    "del": "^5.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-once": "^2.1.1",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react": "16.9.0",
+    "react-docgen": "^5.3.0",
+    "react-dom": "16.9.0",
+    "react-native": "^0.62.2",
+    "react-test-renderer": "^16.13.0",
+    "rollup": "^2.7.2",
+    "standard-version": "^7.1.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "mhui-rn",
+  "scripts": {
+    "build": "npm run buildTypescript && npm run buildBabel",
+    "buildBabel": "rm -rf dist && tsc --emitDeclarationOnly && babel src -d dist --copy-files  --ignore 'src/**/*.d.ts' --extensions '.ts,.tsx'",
+    "buildToDemoOnWin": "gulp buildToDemoOnWin",
+    "buildToDist": "gulp buildToDist",
+    "buildTypescript": "rm -rf dist && tsc",
+    "commit": "git-cz",
+    "cz": "git-cz",
+    "dev": "babel src -d demo/miot-workspace/node_modules/mhui-rn/dist --watch --copy-files  --ignore 'src/**/*.d.ts' --extensions '.ts,.tsx'",
+    "lint": "eslint src --fix --ext .ts,.tsx,.js.,.jsx",
+    "prepublishOnly": "npm run lint && npm run build",
+    "release-f": "standard-version -f",
+    "release-major": "standard-version -r major",
+    "release-minor": "standard-version -r minor",
+    "release-patch": "standard-version -r patch",
+    "test": "jest --passWithNoTests",
+    "ts": "ts-node",
+    "watch": "gulp watch"
+  },
+  "version": "1.5.3"
+}

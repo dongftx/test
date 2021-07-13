@@ -1,0 +1,33 @@
+import DynamicColor from '../DynamicColor';
+export default interface ThemeData {
+    colorPrimary: DynamicColor;
+    colorPrimaryFocus: DynamicColor;
+    colorPrimaryDisabled: DynamicColor;
+    colorWarn: DynamicColor;
+    colorWarnFocus: DynamicColor;
+    colorWarnDisabled: DynamicColor;
+    colorBlack: DynamicColor;
+    colorGrayHeavier: DynamicColor;
+    colorGrayHeavy: DynamicColor;
+    colorGrayNormal: DynamicColor;
+    colorGrayLight: DynamicColor;
+    colorGrayLighter: DynamicColor;
+    colorWhite: DynamicColor;
+    colorBlack1: DynamicColor;
+    colorToast: DynamicColor;
+    colorPlaceHolder: DynamicColor;
+    colorWhite2: DynamicColor;
+    colorBackground: DynamicColor;
+    colorBtnGreenNor: DynamicColor;
+    colorBtnGreenPres: DynamicColor;
+    colorBtnGrayNor: DynamicColor;
+    colorBtnGrayPres: DynamicColor;
+    colorBtnGreenOpaNor: DynamicColor;
+    colorBtnGreenOpaPres: DynamicColor;
+    colorOverLayerBlack: DynamicColor;
+    colorSeparator: DynamicColor;
+    colorForeground: DynamicColor;
+    colorSlideLeft: DynamicColor;
+    colorInputBackground: DynamicColor;
+    colorInputBorder: DynamicColor;
+}
